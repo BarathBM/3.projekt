@@ -1,17 +1,17 @@
 from tkinter import *
 from tkinter.ttk import *
 
-master = Tk()
+root = Tk()
  
 
-master.geometry("200x200")
+root.geometry("200x200")
  
  
 
 def openNewWindow():
      
     
-    newWindow = Toplevel(master)
+    newWindow = Toplevel(root)
  
     
     newWindow.title("New Window")
@@ -24,13 +24,13 @@ def openNewWindow():
           text ="This is a new window").pack()
  
  
-label = Label(master, 
+label = Label(root, 
               text ="This is the main window")
  
 label.pack(pady = 10)
  
 
-btn = Button(master, 
+btn = Button(root, 
              text ="Click to open a new window", 
              command = openNewWindow)
 btn.pack(pady = 10)
