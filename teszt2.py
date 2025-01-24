@@ -105,6 +105,7 @@ def convert_time():
 # Főablak
 root = tk.Tk()
 root.title("Mértékegység Átváltó")
+root.geometry("800x800")
 
 # Cím
 title_label = tk.Label(root, text="Mértékegység Átváltó", font=("Arial", 20))
@@ -125,6 +126,7 @@ def conversion_window(type_name, units, factors):
     # Új ablak nyitása
     conversion_window = tk.Toplevel(root)
     conversion_window.title(f"{type_name.capitalize()} Átváltás")
+    conversion_window.geometry("500x500")
     
     # Beviteli mező
     tk.Label(conversion_window, text="Érték:").pack(pady=5)
