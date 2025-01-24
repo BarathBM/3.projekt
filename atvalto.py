@@ -100,7 +100,7 @@ def openNewWindow(title):
         button_convert.grid(row=3, column=0, columnspan=2)
 
         # Eredmény megjelenítése
-        label_result = Label(newWindow, text="Eredmény:")
+        label_result = Label(newWindow, text="")
         label_result.grid(row=4, column=0, columnspan=2)
     elif(title=="Tömeg"):
         def converttomeg():
@@ -160,7 +160,7 @@ def openNewWindow(title):
         button_convert.grid(row=3, column=0, columnspan=2)
 
         # Eredmény megjelenítése
-        label_result = Label(newWindow, text="Eredmény:")
+        label_result = Label(newWindow, text="")
         label_result.grid(row=4, column=0, columnspan=2)
     else:
         def convertido():
@@ -220,7 +220,7 @@ def openNewWindow(title):
         button_convert.grid(row=3, column=0, columnspan=2)
 
         # Eredmény megjelenítése
-        label_result = Label(newWindow, text="Eredmény:")
+        label_result = Label(newWindow, text="")
         label_result.grid(row=4, column=0, columnspan=2) 
     label = Label(root, text="Főablak")
     label.grid(row=0, column=0, pady=10)
