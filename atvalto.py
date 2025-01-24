@@ -5,11 +5,12 @@ from tkinter.ttk import *
 root =Tk()
 
 root.geometry("600x600")
+root.title("Átváltó")
 
         
         
 def openNewWindow(title):
-    def convert():
+    def converthossz():
         try:
             value = float(entry_value.get())  # A bevitt értéket próbáljuk float-ra alakítani
         except ValueError:
@@ -125,7 +126,7 @@ def openNewWindow(title):
                 result = value / 10
             elif from_unit_value == "kilogramm" and to_unit_value == "gramm":
                 result = value * 1000
-            elif from_unit_value == "kilogramm" and to_unit_value == "deakagramm":
+            elif from_unit_value == "kilogramm" and to_unit_value == "dekagramm":
                 result = value * 10
             else:
                 result = value
