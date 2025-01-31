@@ -123,11 +123,11 @@ def openNewWindow(title):
             elif from_unit_value == "dekagramm" and to_unit_value == "gramm":
                 result = value * 10
             elif from_unit_value == "dekagramm" and to_unit_value == "kilogramm":
-                result = value / 10
+                result = value / 100
             elif from_unit_value == "kilogramm" and to_unit_value == "gramm":
                 result = value * 1000
             elif from_unit_value == "kilogramm" and to_unit_value == "dekagramm":
-                result = value * 10
+                result = value * 100
             else:
                 result = value
             
