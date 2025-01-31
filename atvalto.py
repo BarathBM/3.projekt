@@ -225,6 +225,8 @@ def openNewWindow(title):
         label_result.pack(pady=10) 
     label = Label(root, text="Főablak")
     label.pack(pady=10)
+label1=Label(root,text="Üdvözöllek az átváltóban!")
+label1.pack(pady=10,padx=10)
 
 btn1 = Button(root, text="Tömeg átváltás", command=lambda: openNewWindow("Tömeg"))
 btn2 = Button(root, text="Hossz átváltás", command=lambda: openNewWindow("Hossz"))
@@ -232,11 +234,4 @@ btn3 = Button(root, text="Idő átváltás", command=lambda: openNewWindow("Idő
 btn1.pack(pady=10)
 btn2.pack(pady=10)
 btn3.pack(pady=10)
-label1=Label(root,text="Üdvözöllek az átváltóban!")
-label1.pack(pady=10,padx=10)
-img=PhotoImage(file="ni.jpg")
-label2=Label(root,image=img)
-
-    
-
 root.mainloop()
