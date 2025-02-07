@@ -52,11 +52,11 @@ def openNewWindow(title):
                 label_result.config(text="Hiba: Kérem adjon meg egy számot!")  # Hibás input esetén üzenet
                 return
             
-            # Használjuk a .get() metódust a StringVar-ok értékének lekéréséhez
+            
             from_unit_value = from_unit.get()
             to_unit_value = to_unit.get()
             
-            # Átváltás a megfelelő mértékegységek között
+            
             if from_unit_value == "méter" and to_unit_value == "centiméter":
                 result = value * 100
             elif from_unit_value == "méter" and to_unit_value == "kilométer":
@@ -73,7 +73,7 @@ def openNewWindow(title):
                 result = value
             
             if(to_unit_value == "kilométer"):
-                label_result.config(text="Eredmény: " + str(result)+" km")  # Itt már str() segítségével alakítjuk át
+                label_result.config(text="Eredmény: " + str(result)+" km")  
             elif(to_unit_value == "méter"):
                 label_result.config(text="Eredmény: " + str(result)+" m")
             else:
@@ -111,11 +111,10 @@ def openNewWindow(title):
                 label_result.config(text="Hiba: Kérem adjon meg egy számot!")  # Hibás input esetén üzenet
                 return
             
-            # Használjuk a .get() metódust a StringVar-ok értékének lekéréséhez
+            
             from_unit_value = from_unit.get()
             to_unit_value = to_unit.get()
             
-            # Átváltás a megfelelő mértékegységek között
             if from_unit_value == "gramm" and to_unit_value == "dekagramm":
                 result = value / 10
             elif from_unit_value == "gramm" and to_unit_value == "kilogramm":
@@ -133,7 +132,7 @@ def openNewWindow(title):
             
             # Eredmény megjelenítése
             if(to_unit_value == "kilogramm"):
-                label_result.config(text="Eredmény: " + str(result)+" kg")  # Itt már str() segítségével alakítjuk át
+                label_result.config(text="Eredmény: " + str(result)+" kg") 
             elif(to_unit_value == "gramm"):
                 label_result.config(text="Eredmény: " + str(result)+" g")
             else:
@@ -171,11 +170,11 @@ def openNewWindow(title):
                 label_result.config(text="Hiba: Kérem adjon meg egy számot!")  # Hibás input esetén üzenet
                 return
             
-            # Használjuk a .get() metódust a StringVar-ok értékének lekéréséhez
+            
             from_unit_value = from_unit.get()
             to_unit_value = to_unit.get()
             
-            # Átváltás a megfelelő mértékegységek között
+           
             if from_unit_value == "másodperc" and to_unit_value == "óra":
                 result = value / 3600
             elif from_unit_value == "másodperc" and to_unit_value == "perc":
@@ -193,7 +192,7 @@ def openNewWindow(title):
             
             # Eredmény megjelenítése
             if(to_unit_value == "másodperc"):
-                label_result.config(text="Eredmény: " + str(result)+" s")  # Itt már str() segítségével alakítjuk át
+                label_result.config(text="Eredmény: " + str(result)+" s")  
             elif(to_unit_value == "perc"):
                 label_result.config(text="Eredmény: " + str(result)+" min")
             else:
