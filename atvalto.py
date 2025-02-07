@@ -145,13 +145,13 @@ def openNewWindow(title):
         # Kiválasztó menük az egyes mértékegységekhez
         label_from_unit = Label(newWindow, text="Forrás mértékegység:")
         label_from_unit.pack(pady=10)
-        from_unit = StringVar(value="méter")
+        from_unit = StringVar(value="gramm")
         dropdown_from = OptionMenu(newWindow, from_unit, "gramm", "dekagramm", "kilogramm")
         dropdown_from.pack(pady=10)
 
         label_to_unit = Label(newWindow, text="Cél mértékegység:")
         label_to_unit.pack(pady=10)
-        to_unit = StringVar(value="centiméter")
+        to_unit = StringVar(value="gramm")
         dropdown_to = OptionMenu(newWindow, to_unit, "gramm", "dekagramm", "kilogramm")
         dropdown_to.pack(pady=10)
 
@@ -205,13 +205,13 @@ def openNewWindow(title):
         # Kiválasztó menük az egyes mértékegységekhez
         label_from_unit = Label(newWindow, text="Forrás mértékegység:")
         label_from_unit.pack(pady=10)
-        from_unit = StringVar(value="méter")
+        from_unit = StringVar(value="óra")
         dropdown_from = OptionMenu(newWindow, from_unit, "másodperc", "perc", "óra")
         dropdown_from.pack(pady=10)
 
         label_to_unit = Label(newWindow, text="Cél mértékegység:")
         label_to_unit.pack(pady=10)
-        to_unit = StringVar(value="centiméter")
+        to_unit = StringVar(value="másodperc")
         dropdown_to = OptionMenu(newWindow, to_unit, "másodperc", "perc", "óra")
         dropdown_to.pack(pady=10)
 
