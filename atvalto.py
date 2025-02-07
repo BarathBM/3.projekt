@@ -223,8 +223,7 @@ def openNewWindow(title):
         # Eredmény megjelenítése
         label_result = Label(newWindow, text="")
         label_result.pack(pady=10) 
-    label = Label(root, text="Főablak")
-    label.pack(pady=10)
+    
 label1=Label(root,text="Üdvözöllek az átváltóban!")
 label1.pack(pady=10,padx=10)
 
